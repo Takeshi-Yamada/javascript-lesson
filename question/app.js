@@ -130,7 +130,7 @@ let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for(let i = 0; i < mixed.length; i++) {
   console.log(mixed[i])
-  if(!(Number.isFinite(mixed[i]))) {
+  if(!(typeof mixed[i] === 'number')) {
     console.log('not number')
   } else if(mixed[i]%2 === 0) {
     console.log('even');

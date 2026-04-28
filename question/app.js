@@ -39,11 +39,10 @@ console.log(playerList[1].favorites[1]);
 
 // 5
 let sum = 0;
-let i = 0
-for( ; i < playerList.length ; i++) {
-  sum += playerList[i].age;
+for(let num = 0; num < playerList.length; num++) {
+  sum += playerList[num].age;
 }
-ave = sum / i;
+let ave = sum / playerList.length;
 console.log(ave);
 
 // 6
@@ -67,25 +66,25 @@ user.sayHello();
 
 // 8
 let calc = {};
-function add(x, y) {
+calc.add = function(x, y) {
   console.log(x + y);
 }
-add(1, 6);
+calc.add(1, 6);
 
-function subtract(x, y) {
+calc.subtract = function(x, y) {
   console.log(x - y);
 }
-subtract(11, 1);
+calc.subtract(11, 1);
 
-function multiply(x, y) {
+calc.multiply = function(x, y) {
   console.log(x * y);
 }
-multiply(7, 7);
+calc.multiply(7, 7);
 
-function divide(x, y) {
+calc.divide = function(x, y) {
   console.log(x / y);
 }
-divide(30, 6);
+calc.divide(30, 6);
 
 // 9
 function remainder(x, y) {
@@ -108,7 +107,7 @@ console.log(Math.floor(Math.random()*10));
 setTimeout(console.log('Hello World!'),3000);
 
 // 3
-num = Math.floor(Math.random()*100) - Math.floor(Math.random()*100);
+let num = Math.floor(Math.random()*100) - Math.floor(Math.random()*100);
 console.log(num);
 if(0 < num) {
   console.log('num is greater than 0');
@@ -120,21 +119,21 @@ if(0 < num) {
 
 // 4
 let numbers = [];
-for(let i = 0; i < 100 ; i++) {
-  numbers[i] = i;
+for(let num = 0; num < 100 ; num++) {
+  numbers[num] = num;
 }
 console.log(numbers);
 
 // 5
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
-for(let i = 0; i < mixed.length; i++) {
-  console.log(mixed[i])
-  if(!(typeof mixed[i] === 'number')) {
+for(let num = 0; num < mixed.length; num++) {
+  console.log(mixed[num])
+  if(!(typeof mixed[num] === 'number')) {
     console.log('not number')
-  } else if(mixed[i]%2 === 0) {
+  } else if(mixed[num]%2 === 0) {
     console.log('even');
-  } else if(mixed[i]%2 === 1) {
+  } else if(mixed[num]%2 === 1) {
     console.log('odd');
   }
 }

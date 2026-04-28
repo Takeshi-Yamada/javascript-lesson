@@ -39,8 +39,8 @@ console.log(playerList[1].favorites[1]);
 
 // 5
 let sum = 0;
-for(let num = 0; num < playerList.length; num++) {
-  sum += playerList[num].age;
+for(let i = 0; i < playerList.length; i++) {
+  sum += playerList[i].age;
 }
 let ave = sum / playerList.length;
 console.log(ave);
@@ -119,21 +119,21 @@ if(0 < num) {
 
 // 4
 let numbers = [];
-for(let num = 0; num < 100 ; num++) {
-  numbers[num] = num;
+for(let i = 0; i < 100 ; i++) {
+  numbers[i] = i;
 }
 console.log(numbers);
 
 // 5
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
-for(let num = 0; num < mixed.length; num++) {
-  console.log(mixed[num])
-  if(!(typeof mixed[num] === 'number')) {
+for(let i = 0; i < mixed.length; i++) {
+  console.log(mixed[i])
+  if(!(typeof mixed[i] === 'number')) {
     console.log('not number')
-  } else if(mixed[num]%2 === 0) {
+  } else if(mixed[i]%2 === 0) {
     console.log('even');
-  } else if(mixed[num]%2 === 1) {
+  } else if(mixed[i]%2 === 1) {
     console.log('odd');
   }
 }

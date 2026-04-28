@@ -88,9 +88,9 @@ calc.divide(30, 6);
 
 // 9
 function remainder(x, y) {
-  console.log(x + 'を' + y + 'で割った余りは' + x % y + 'です。');
+  return  x % y;
 }
-remainder(5,3);
+console.log(x + 'を' + y + 'で割った余りは' + remainder(5,3) + 'です。');
 
 // 10
 /*
@@ -104,7 +104,9 @@ console.logをfoo内で実行する必要がある。
 console.log(Math.floor(Math.random()*10));
 
 // 2
-setTimeout(console.log('Hello World!'),3000);
+setTimeout(()=>{
+  console.log('Hello World!')
+},3000);
 
 // 3
 let num = Math.floor(Math.random()*100) - Math.floor(Math.random()*100);
